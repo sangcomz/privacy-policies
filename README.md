@@ -5,7 +5,7 @@
 앱별 공개 URL:
 
 - 오목: `https://sangcomz.github.io/privacy-policies/policies/omok.html`
-- Doodle Friend: `https://sangcomz.github.io/privacy-policies/policies/doodlefriend.html`
+- 나만의 수족관: `https://sangcomz.github.io/privacy-policies/policies/doodlefriend.html`
 - Doodle Tale: `https://sangcomz.github.io/privacy-policies/policies/doodletale.html`
 - 한글 리더: `https://sangcomz.github.io/privacy-policies/policies/hangulreader.html`
 - Sudoku Flex: `https://sangcomz.github.io/privacy-policies/policies/sudoku-flex.html`

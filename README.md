@@ -5,6 +5,7 @@
 앱별 공개 URL:
 
 - 오목: `https://sangcomz.github.io/privacy-policies/policies/omok.html`
+- 모두의 알까기: `https://sangcomz.github.io/privacy-policies/policies/allkaaki.html`
 - 두들프렌즈: 힐링 3D 수족관: `https://sangcomz.github.io/privacy-policies/policies/doodlefriend.html`
 - Doodle Tale: `https://sangcomz.github.io/privacy-policies/policies/doodletale.html`
 - 한글 리더: `https://sangcomz.github.io/privacy-policies/policies/hangulreader.html`

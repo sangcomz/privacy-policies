@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>모두의 알까기 개인정보 처리방침</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.7; margin: 0; background: #f6f7f9; color: #1f2937; }
+    main { max-width: 900px; margin: 0 auto; padding: 40px 20px 80px; }
+    h1 { font-size: 2rem; margin-bottom: 8px; }
+    h2 { font-size: 1.2rem; margin-top: 32px; }
+    p, li { font-size: 1rem; }
+    a { color: #2563eb; }
+    .meta { color: #4b5563; margin-bottom: 24px; }
+  </style>
+</head>
+<body>
+  <div style="max-width:900px;margin:0 auto;padding:16px 20px 0;font-size:0.95rem;">
+    <strong>한국어</strong> | <a href="/privacy-policies/policies/allkaaki-en.html">English</a>
+  </div>
+  <main>
+    <h1>모두의 알까기 개인정보 처리방침</h1>
+    <p class="meta">시행일: 2026년 9월 6일</p>
+
+    <p>모두의 알까기(이하 "앱")는 사용자 개인정보를 최우선으로 존중하며, 회원가입, 로그인 계정 생성, 금융 결제 정보, 불필요한 위치 정보 등을 일체 수집하지 않습니다. 앱의 모든 게임 데이터와 설정값은 사용자 기기 내에서만 안전하게 처리됩니다.</p>
+
+    <h2>1. 수집하는 정보</h2>
+    <p>앱은 기본적으로 다음과 같은 개인정보를 일체 수집하거나 서버로 전송하지 않습니다.</p>
+    <ul>
+      <li>이름, 이메일, 전화번호, 주소 등 개인 식별 정보</li>
+      <li>사용자 위치 정보 (GPS 위치 및 이동 경로)</li>
+      <li>결제 정보, 계정 정보 및 연락처/주소록 정보</li>
+      <li>광고 식별자(AD_ID) - 앱 내 광고 ID 수집 권한을 원천 차단함</li>
+    </ul>
+
+    <h2>2. 근처 기기 연결 (Nearby P2P 대전) 및 권한 안내</h2>
+    <p>앱은 동일 공간 내 친구와 무선으로 대결할 수 있는 '근처 친구와 대전(무선 P2P)' 기능을 제공합니다. 이를 위해 다음 기기 기능 및 권한을 활용합니다.</p>
+    <ul>
+      <li><strong>근처 기기 검색 및 블루투스 권한 (BLUETOOTH_SCAN, BLUETOOTH_ADVERTISE, BLUETOOTH_CONNECT, NEARBY_WIFI_DEVICES):</strong> 인접한 상대방 기기를 검색하고 양방향 로컬 P2P 연결을 생성하는 데에만 사용됩니다. 이 권한은 위치 추적 목적으로 사용되지 않으며(neverForLocation 적용), 대전 중 돌의 위치 및 게임 상태를 동기화한 후 연결 종료 시 즉시 파기됩니다.</li>
+      <li><strong>진동 권한 (VIBRATE):</strong> 바둑알 충돌 및 게임 이벤트 발생 시 촉각적 햅틱 피드백을 제공하기 위해서만 기기 내에서 처리됩니다.</li>
+    </ul>
+
+    <h2>3. 기기 내 로컬 처리 (Local Processing)</h2>
+    <p>바둑판 맵 선택, 바둑알 배치 설정, AI 대전 기록, 사운드 및 진동 설정값 등 게임 진행에 필요한 모든 데이터는 사용자 기기 내부(Local Storage)에만 저장됩니다. 해당 데이터는 외부 서버로 자동 전송되지 않으며, 앱 삭제 시 기기에서 완전히 초기화됩니다.</p>
+
+    <h2>4. 제3자 서비스</h2>
+    <p>앱은 안정적인 근거리 기기 검색 및 로컬 P2P 통신을 위해 Google Play Services(Nearby Connections)를 사용합니다. 해당 서비스의 데이터 보호 규정은 Google의 개인정보처리방침을 따릅니다.</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+    </ul>
+
+    <h2>5. 정보의 보관 및 파기</h2>
+    <p>앱은 중앙 서버를 운영하지 않으며 사용자 데이터를 별도 데이터베이스에 보관하지 않습니다. 기기 내 저장된 설정값은 앱 삭제 또는 기기 캐시 삭제를 통해 언제든지 완전히 파기할 수 있습니다.</p>
+
+    <h2>6. 개인정보 보호책임자 및 문의</h2>
+    <p>개인정보 처리방침과 관련된 질문이나 문의 사항은 아래의 공식 연락처로 문의해 주시기 바랍니다.</p>
+    <p>개발자: 정석원<br>이메일: <a href="mailto:hello.seokwon@gmail.com">hello.seokwon@gmail.com</a></p>
+  </main>
+</body>
+</html>

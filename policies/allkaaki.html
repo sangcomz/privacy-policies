@@ -32,6 +32,7 @@
       <li>결제 정보, 계정 정보 및 연락처/주소록 정보</li>
       <li>광고 식별자(AD_ID) - 앱 내 광고 ID 수집 권한을 원천 차단함</li>
     </ul>
+    <p>다만, 앱의 안정성 및 서비스 품질 개선을 위해 제품 분석 도구(PostHog)를 사용할 수 있으며, 릴리즈 모드에 한하여 개인을 식별할 수 없는 익명화된 앱 사용 이벤트, 오류 통계, 기기 및 OS 버전 정보가 전송될 수 있습니다.</p>
 
     <h2>2. 근처 기기 연결 (Nearby P2P 대전) 및 권한 안내</h2>
     <p>앱은 동일 공간 내 친구와 무선으로 대결할 수 있는 '근처 친구와 대전(무선 P2P)' 기능을 제공합니다. 이를 위해 다음 기기 기능 및 권한을 활용합니다.</p>
@@ -44,9 +45,10 @@
     <p>바둑판 맵 선택, 바둑알 배치 설정, AI 대전 기록, 사운드 및 진동 설정값 등 게임 진행에 필요한 모든 데이터는 사용자 기기 내부(Local Storage)에만 저장됩니다. 해당 데이터는 외부 서버로 자동 전송되지 않으며, 앱 삭제 시 기기에서 완전히 초기화됩니다.</p>
 
     <h2>4. 제3자 서비스</h2>
-    <p>앱은 안정적인 근거리 기기 검색 및 로컬 P2P 통신을 위해 Google Play Services(Nearby Connections)를 사용합니다. 해당 서비스의 데이터 보호 규정은 Google의 개인정보처리방침을 따릅니다.</p>
+    <p>앱은 안정적인 서비스 운영 및 분석을 위해 다음과 같은 제3자 서비스를 활용합니다. 각 서비스는 자체 개인정보 처리방침에 따라 데이터를 처리합니다.</p>
     <ul>
-      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Services (Nearby Connections) 개인정보처리방침</a></li>
+      <li><a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog 개인정보 처리방침</a></li>
     </ul>
 
     <h2>5. 정보의 보관 및 파기</h2>

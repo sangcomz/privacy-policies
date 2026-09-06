@@ -31,7 +31,7 @@
       <li>Payment data, account credentials, or contacts/address book</li>
       <li>Advertising ID (AD_ID is explicitly removed and prohibited in the app)</li>
     </ul>
-    <p>However, to ensure app stability and optimize user experience, the App may use product analytics (PostHog) strictly in release builds to collect anonymized usage events, error diagnostics, device models, and OS version information that cannot identify any individual.</p>
+    <p>However, to ensure app stability and optimize user experience, the App may use product analytics and crash reporting tools (Firebase Analytics, Firebase Crashlytics, PostHog) strictly in release builds to collect anonymized usage events, crash reports, error diagnostics, device models, and OS version information that cannot identify any individual.</p>
 
     <h2>2. Nearby Connections (Wireless P2P Match) & Permissions</h2>
     <p>The App provides a "Nearby Wireless Battle" feature allowing two players in the same physical space to play in real-time. The following device features and permissions are utilized strictly for this functionality:</p>
@@ -47,6 +47,7 @@
     <p>The App utilizes the following third-party services for local wireless multiplayer connectivity and anonymous analytics. Each service operates under its respective privacy policy:</p>
     <ul>
       <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Services (Nearby Connections) Privacy Policy</a></li>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a></li>
       <li><a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog Privacy Policy</a></li>
     </ul>
 

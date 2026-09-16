@@ -4,6 +4,8 @@
 
 앱별 공개 URL:
 
+- Pieceful: `https://sangcomz.github.io/privacy-policies/policies/pieceful.html`
+
 - 오목: `https://sangcomz.github.io/privacy-policies/policies/omok.html`
 - 모두의 알까기: 핑거 배틀: `https://sangcomz.github.io/privacy-policies/policies/allkaaki.html`
 - 두들프렌즈: 힐링 3D 수족관: `https://sangcomz.github.io/privacy-policies/policies/doodlefriend.html`

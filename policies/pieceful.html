@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pieceful 개인정보 처리방침</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.75; margin: 0; background: #f7f4ee; color: #263f37; }
+    main { max-width: 900px; margin: 0 auto; padding: 40px 20px 80px; }
+    h1 { font-size: 2rem; margin-bottom: 8px; color: #1c322b; }
+    h2 { font-size: 1.25rem; margin-top: 36px; border-bottom: 1px solid #e2ded4; padding-bottom: 8px; color: #1c322b; }
+    p, li { font-size: 1rem; color: #2e4a41; }
+    ul { padding-left: 20px; }
+    a { color: #1d5b45; font-weight: 500; }
+    .meta { color: #6b7280; margin-bottom: 24px; font-size: 0.95rem; }
+    .lang { margin-bottom: 24px; font-size: 0.95rem; }
+    .box { background: #efebe1; border-radius: 8px; padding: 16px 20px; margin: 20px 0; border: 1px solid #e2ded4; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="lang">
+      <strong>한국어</strong> | <a href="/privacy-policies/policies/pieceful-en.html">English</a>
+    </div>
+    <h1>Pieceful 개인정보 처리방침</h1>
+    <p class="meta">시행일: 2026년 9월 16일</p>
+
+    <p>Pieceful(이하 "앱")은 사용자가 평화롭고 편안하게 직소 퍼즐을 즐길 수 있는 힐링 퍼즐 서비스입니다. 앱은 회원가입, 계정 생성, 결제, 연락처, 위치 정보 수집을 일절 요구하지 않습니다.</p>
+
+    <div class="box">
+      <strong>핵심 요약:</strong> 사용자가 직접 선택한 사진은 오직 기기 내부(앱 전용 저장소)에서만 처리되며, 사진 원본, 파일명, 이미지 데이터는 <strong>외부 서버로 절대 업로드되거나 전송되지 않습니다.</strong>
+    </div>
+
+    <h2>1. 수집하지 않는 정보</h2>
+    <p>Pieceful은 이용자의 사생활 보호를 최우선으로 하며 다음 정보를 수집하지 않습니다:</p>
+    <ul>
+      <li>이름, 이메일, 전화번호 등 개인을 식별할 수 있는 정보</li>
+      <li>사용자 위치 정보 (GPS, Wi-Fi 기반 위치 등)</li>
+      <li>결제 정보 및 금융 계좌 정보</li>
+      <li>연락처, 통화 기록, 주소록 정보</li>
+      <li>광고 식별자(AD_ID 권한은 완전히 제거되어 있습니다)</li>
+    </ul>
+
+    <h2>2. 사진 및 기기 내 데이터 처리</h2>
+    <ul>
+      <li><strong>사진 선택기:</strong> 사용자가 "나만의 퍼즐"을 제작하기 위해 Android 시스템 사진 선택기(Photo Picker)에서 직접 선택한 사진에만 접근합니다.</li>
+      <li><strong>로컬 저장:</strong> 선택된 사진은 기기 내 앱 전용 안전한 공간에 퍼즐 플레이에 필요한 최적 해상도로 변환되어 보관되며, 촬영 위치 등 메타데이터(Exif)는 저장하지 않습니다.</li>
+      <li><strong>서버 미전송:</strong> 개인 사진, 퍼즐 조각 배치 및 결과물은 서버로 업로드되지 않으며 분석 이벤트에도 포함되지 않습니다.</li>
+      <li><strong>삭제 및 초기화:</strong> 퍼즐을 삭제하거나 앱 데이터를 삭제하면 기기 내 저장된 퍼즐 복사본이 영구 삭제되며, 갤러리의 원본 사진은 영향을 받지 않습니다.</li>
+    </ul>
+
+    <h2>3. 분석 및 오류 보고 (제3자 서비스)</h2>
+    <p>배포용 빌드에서는 서비스의 안정성 유지 및 앱 성능 개선을 위해 익명화된 최소한의 진단 도구를 사용할 수 있습니다:</p>
+    <ul>
+      <li><strong>Firebase Analytics & Crashlytics:</strong> 비정상 종료(Crash) 로그, 기기 모델, OS 버전, 앱 버전, 익명화된 앱 설치 식별자</li>
+      <li><strong>PostHog:</strong> 퍼즐 시작/완료 시의 조각 수(예: 20, 1000), 기본/개인 사진 여부, 소요 시간 등 제한된 게임 진행 통계 (개인정보 및 사진 파일 미포함)</li>
+    </ul>
+    <p>각 제3자 서비스의 정책은 아래 링크에서 확인할 수 있습니다:</p>
+    <ul>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google Firebase 개인정보 보호</a></li>
+      <li><a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog 개인정보 처리방침</a></li>
+    </ul>
+
+    <h2>4. 원격 설정 및 외부 링크</h2>
+    <p>앱은 Firebase Remote Config를 통해 공지 사항, 안내 메시지, 추천 앱 설정을 수신할 수 있습니다. 추천 링크를 누르는 경우 Google Play 스토어 등 외부 공식 마켓으로 연결되며, 게임 플레이 자체는 오프라인 상태에서도 완벽하게 작동합니다.</p>
+
+    <h2>5. 어린이 보호 정책</h2>
+    <p>이 앱은 모든 연령대를 위한 일반 이용자용 퍼즐 앱으로 아동을 대상으로 한 개인정보를 고의로 수집하지 않으며, 관련 법령 및 구글 플레이 가족 정책 기준을 준수합니다.</p>
+
+    <h2>6. 문의 및 담당자</h2>
+    <p>개인정보 처리방침이나 데이터 보호에 관한 문의사항이 있으시면 언제든지 아래 메일로 연락해 주시기 바랍니다.</p>
+    <p>이메일: <a href="mailto:hello.seokwon@gmail.com">hello.seokwon@gmail.com</a></p>
+  </main>
+</body>
+</html>

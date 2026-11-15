@@ -13,7 +13,7 @@
 - 한글 리더: `https://sangcomz.github.io/privacy-policies/policies/hangulreader.html`
 - Sudoku Flex: `https://sangcomz.github.io/privacy-policies/policies/sudoku-flex.html`
 - 앰비언트 포모도로: `https://sangcomz.github.io/privacy-policies/policies/ambient-pomodoro.html`
-- 갤러리 다이어트: `https://sangcomz.github.io/privacy-policies/policies/screenshot-cleaner.html`
+- Swidy: `https://sangcomz.github.io/privacy-policies/policies/screenshot-cleaner.html`
 - 뽑아주: `https://sangcomz.github.io/privacy-policies/policies/ppobaju.html`
 - Tuxepedia Guide: `https://sangcomz.github.io/privacy-policies/policies/tuxepedia.html`
 - Tuxepomodoro: `https://sangcomz.github.io/privacy-policies/policies/tuxepomodoro.html`

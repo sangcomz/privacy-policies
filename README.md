@@ -5,6 +5,7 @@
 앱별 공개 URL:
 
 - Pieceful: `https://sangcomz.github.io/privacy-policies/policies/pieceful.html`
+- 알림결 (NoticeFlow): `https://sangcomz.github.io/privacy-policies/policies/noticeflow.html`
 
 - 오목: `https://sangcomz.github.io/privacy-policies/policies/omok.html`
 - 모두의 알까기: 핑거 배틀: `https://sangcomz.github.io/privacy-policies/policies/allkaaki.html`

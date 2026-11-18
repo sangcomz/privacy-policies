@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NoticeFlow Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.75; margin: 0; background: #f6f8f7; color: #161d1c; }
+    main { max-width: 900px; margin: 0 auto; padding: 40px 20px 80px; }
+    h1 { font-size: 2rem; margin-bottom: 8px; color: #062e2b; }
+    h2 { font-size: 1.25rem; margin-top: 36px; border-bottom: 1px solid #c1ccc9; padding-bottom: 8px; color: #062e2b; }
+    p, li { font-size: 1rem; color: #2e3b39; }
+    ul { padding-left: 20px; }
+    a { color: #1e5f5b; font-weight: 500; }
+    .meta { color: #546360; margin-bottom: 24px; font-size: 0.95rem; }
+    .lang { margin-bottom: 24px; font-size: 0.95rem; }
+    .box { background: #e9efed; border-radius: 8px; padding: 16px 20px; margin: 20px 0; border: 1px solid #c1ccc9; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="lang">
+      <a href="/privacy-policies/policies/noticeflow.html">한국어</a> | <strong>English</strong>
+    </div>
+    <h1>NoticeFlow Privacy Policy</h1>
+    <p class="meta">Effective date: November 15, 2026</p>
+
+    <p>NoticeFlow (Korean: 알림결, hereinafter "the App") is an Android notification management utility that dismisses or snoozes notifications based on user-defined rules. The App does not require user accounts, payment details, contacts, or location access.</p>
+
+    <div class="box">
+      <strong>Core Privacy Principle:</strong> Notification titles and body text are inspected <strong>strictly in memory on your device</strong> to evaluate matching rules. <strong>Notification content is never saved to history, logged, or transmitted to external servers.</strong>
+    </div>
+
+    <h2>1. Information Not Collected</h2>
+    <ul>
+      <li>Personal identifiers such as name, email address, or phone number</li>
+      <li>Notification titles, body text, sender content, or rule keyword content in history, logs, or analytics</li>
+      <li>Precise or coarse location data</li>
+      <li>Contacts, call logs, or SMS messages</li>
+      <li>Advertising identifiers (both <code>AD_ID</code> and <code>ACCESS_ADSERVICES_AD_ID</code> are explicitly removed from the merged manifest)</li>
+    </ul>
+
+    <h2>2. Permissions &amp; On-Device Storage</h2>
+    <ul>
+      <li><strong>Notification Access (BIND_NOTIFICATION_LISTENER_SERVICE):</strong> Active only after you explicitly grant Notification Access in Android System Settings. Used to evaluate posted notifications in memory and call <code>cancelNotification</code> or <code>snoozeNotification</code> for matching rules.</li>
+      <li><strong>Post Notifications (POST_NOTIFICATIONS, Android 13+ optional):</strong> Requested only if you use the local test notification diagnostic button in Settings. NoticeFlow ignores its own notifications to prevent loops.</li>
+      <li><strong>Launcher App Query:</strong> Queries installed launcher apps locally on-device to populate the rule editor's app dropdown. The list of installed apps is never uploaded or included in analytics.</li>
+      <li><strong>Local Rules &amp; Metadata History:</strong> Your rules and up to the latest 100 execution metadata records (rule display name, target app/package, timestamp, action, and success/failure) are stored locally in app-private DataStore Preferences. History contains no notification text or keywords and can be cleared anytime in the History screen or by clearing app data.</li>
+    </ul>
+
+    <h2>3. Diagnostics &amp; Analytics (Release Builds Only)</h2>
+    <p>Release builds collect minimal pseudonymous operational metadata for stability and app lifecycle visibility. Debug builds disable Firebase and PostHog collection completely. Session replay and automatic screen capture are disabled.</p>
+    <ul>
+      <li><strong>Firebase Analytics &amp; Crashlytics:</strong> Crash reports, device model, OS version, app version, and app-open lifecycle events (<code>app_opened</code>).</li>
+      <li><strong>PostHog (US Cloud):</strong> App-open lifecycle events (<code>app_opened</code>) and Settings "More Apps" banner impressions/clicks. No notification content, target packages, or rule keywords are included.</li>
+    </ul>
+    <p>Third-party privacy policies:</p>
+    <ul>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google Firebase Privacy</a></li>
+      <li><a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog Privacy Policy</a></li>
+    </ul>
+
+    <h2>4. Remote Config &amp; External Links</h2>
+    <p>The Settings screen may display cross-promotion recommendations fetched via Firebase Remote Config. Tapping a card opens Google Play or an official developer showcase link.</p>
+
+    <h2>5. Children's Privacy</h2>
+    <p>NoticeFlow is a general-audience utility app and does not knowingly collect personal information from children.</p>
+
+    <h2>6. Contact</h2>
+    <p>For questions about this Privacy Policy or data handling, contact:</p>
+    <p>Email: <a href="mailto:hello.seokwon@gmail.com">hello.seokwon@gmail.com</a></p>
+  </main>
+</body>
+</html>

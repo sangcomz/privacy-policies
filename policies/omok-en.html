@@ -19,19 +19,21 @@
   <main>
     <div class="lang"><a href="/privacy-policies/policies/omok.html">한국어</a> | <strong>English</strong></div>
     <h1>Gomoku Privacy Policy</h1>
-    <p class="meta">Effective date: August 30, 2026</p>
+    <p class="meta">Effective date: November 24, 2026</p>
 
-    <p>Gomoku (hereinafter "the App") does not require account creation, payment information, or location data. The app processes game state locally on the device and may use anonymous diagnostic information for service improvement and error analysis.</p>
+    <p>AI and local matches in Gomoku can be played without an account. Opening the Online tab automatically creates an account using Firebase Anonymous Authentication and stores an account identifier, game statistics, and selected skins on the server. Device transfers use a single-use code.</p>
 
     <h2>1. Information collected</h2>
     <p>By default, Gomoku does not collect the following information:</p>
     <ul>
-      <li>Name, email, phone number, or other personal identifiers</li>
+      <li>Name, email or phone number as game registration information</li>
       <li>Precise location information</li>
-      <li>Payment or account information</li>
+      <li>Payment information</li>
       <li>Contact list or address book data</li>
     </ul>
-    <p>To improve stability and user experience, the app may use Firebase Analytics, Firebase Crashlytics, and PostHog. These services may process anonymous usage statistics, app launch events, crash/error logs, device information, app version, OS version, and language information.</p>
+    <p>To improve stability and user experience, the app may use Firebase Analytics, Firebase Crashlytics, and PostHog. These services may process pseudonymous usage statistics, app launch events, crash/error logs, device information, app version, OS version, and language information.</p>
+
+    <p>Online play processes the account ID, participants, moves, selected skins, country display, connection timestamps, match outcomes and selected preset-chat IDs. Country display comes from device region settings or user selection, not GPS. Firebase Authentication also processes IP addresses and user-agent information for security and abuse prevention. Analytics and diagnostics may process installation identifiers, app interactions, crash/ANR reports and approximate region derived from IP addresses. Identifiers associated with an installation or account are not treated as fully anonymous.</p>
 
     <h2>2. Purpose of collection</h2>
     <p>Collected data is used only for the following purposes:</p>
@@ -39,24 +41,30 @@
       <li>App stability and bug fixing</li>
       <li>User experience improvement and feature validation</li>
       <li>Usage analytics and service optimization</li>
-      <li>Remote settings and guidance content</li>
+      <li>Remote settings, recommendations for other apps by the developer, and measuring recommendation interactions</li>
+      <li>Online matches, account identification, and single-use device transfers</li>
     </ul>
 
     <h2>3. Device-side processing</h2>
-    <p>Game moves, board settings, AI match progress, and local gameplay history are processed on the device. This information is not automatically sent to a server, and it can be removed or reset through your app settings or by reinstalling the app.</p>
+    <p>AI and local match progress, statistics, and skin selections are stored on the device. Online matches send game information to Firebase Realtime Database. Online account creation and device transfers store a snapshot of statistics and selected skins on the server. Issuing a transfer code resets the statistics and selected skins on the source device.</p>
+
+    <p>Nearby play uses Bluetooth and Wi-Fi permissions. Older Android versions may require a location permission for device discovery; the game does not send GPS coordinates to its server.</p>
 
     <h2>4. Third-party services</h2>
-    <p>Gomoku may use third-party services such as Firebase and PostHog for analytics, crash reporting, and remote configuration. These services are subject to their own privacy policies.</p>
+    <p>Gomoku may use third-party services such as Firebase and PostHog for analytics, crash reporting, remote configuration, anonymous authentication, and online data storage. These services are subject to their own privacy policies.</p>
     <ul>
       <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></li>
       <li><a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog Privacy Policy</a></li>
     </ul>
 
     <h2>5. Remote configuration</h2>
-    <p>Where applicable, Firebase Remote Config may be used to deliver feature flags, guidance messages, or app settings. This may involve anonymized device identifiers, app version, OS information, and language data.</p>
+    <p>Where applicable, Firebase Remote Config may be used to deliver feature flags, guidance messages, or app settings. This may involve installation identifiers, app version, OS information, and language data.</p>
 
-    <h2>6. Storage and deletion</h2>
-    <p>The app does not maintain account-based user profiles, payment records, or personal contact information. Usage logs and analytics data are retained only as needed for maintenance and improvement.</p>
+    <h2 id="data-deletion">6. Retention and deletion</h2>
+    <p>We retain the online authentication account, server statistics and selected skins, transfer state, match records and result receipts while providing online play and device transfers. Related records are removed when the account is deleted. The server stores a transfer-code verification hash; the source device keeps the original code until use. The verification information is cleared when a transfer is acknowledged. Uninstalling the app does not delete server data.</p>
+    <p>Use <strong>Settings → Delete account and data</strong> in the latest app. The app removes owned statistics and skin snapshots, unused transfer codes, shared match data and online result records, then deletes the Firebase anonymous authentication account. Local statistics, selected skins, replays and puzzle progress are also reset. An ongoing match counts as resignation; the opponent's settled result is preserved. An account already transferred to another device belongs to that recipient and must be deleted there.</p>
+    <p>Online deletion requires connectivity. If it fails, the app does not claim completion and keeps sign-in and deletion progress for retry. Authentication is retained until database cleanup succeeds. Reopening the app or retrying resumes the operation.</p>
+    <p><a href="omok-delete.html#english"><strong>Request account or data deletion without the app</strong></a> if you have uninstalled it or cannot access it. Support requests are processed after ownership verification. You can use the same route to request deletion of records held separately by analytics and diagnostic providers, following their identification and deletion procedures. Aggregated statistics that cannot be linked to an individual may be kept separately.</p>
 
     <h2>7. Contact</h2>
     <p>For privacy-related questions, contact:</p>

@@ -4,6 +4,7 @@
 
 앱별 공개 URL:
 
+- VPN Quest: `https://sangcomz.github.io/privacy-policies/policies/vpnquest.html`
 - 워치 APK 설치기 (WatchInstaller): `https://sangcomz.github.io/privacy-policies/policies/watchinstaller.html`
 - Pieceful: `https://sangcomz.github.io/privacy-policies/policies/pieceful.html`
 - 알림결 (NoticeFlow): `https://sangcomz.github.io/privacy-policies/policies/noticeflow.html`
